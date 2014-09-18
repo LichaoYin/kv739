@@ -1,0 +1,4 @@
+message KVMessage {
+  optional string key = 1;
+  optional string value = 3;
+}

@@ -1,0 +1,8 @@
+*.o
+client
+server
+bak/
+*.so
+.*.swp
+protobuf-2.5.0.tar.bz2
+protobuf-2.5.0/
