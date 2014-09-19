@@ -29,7 +29,8 @@ bool KVDatabase::Get(std::string key, std::string* value) {
 }
 
 bool KVDatabase::Put(std::string key, std::string value) {
-  std::string sql = "insert into data values (" + key + "," + value + ");";
+  std::string sql = "insert into data values ('" + key + "','" + value + "');";
+  printf("sql = %s\n", sql.c_str());
   char * error_msg = 0;
   int rc = sqlite3_exec(database_, sql.c_str(), NULL, NULL, &error_msg );
   if (rc != SQLITE_OK) {
