@@ -5,7 +5,7 @@
 #include "kv739.h"
 
 int main() {
-  char * server = "128.105.14.207:5001";
+  char * server = "128.105.14.207:6666";
   int init = kv739_init(server);
   char buffer[4096];
   int rc = -100;
